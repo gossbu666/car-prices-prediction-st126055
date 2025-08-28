@@ -1,15 +1,9 @@
 services:
   dev:
     build: .
-    image: carprice:dev
     container_name: carprice_dev
-    working_dir: /workspace
-    command: bash -lc "sleep infinity"
-    volumes:
-      - .:/workspace
     ports:
-      - "8888:8888"   # JupyterLab
-      - "8050:8050"   # Dash
+      - "8050:8050"
     environment:
       - PYTHONUNBUFFERED=1
-      - PIP_DISABLE_PIP_VERSION_CHECK=1
+    restart: unless-stopped

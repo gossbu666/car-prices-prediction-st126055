@@ -12,11 +12,6 @@ Dataset used: Cars dataset
 
 ⸻
 
-> **Note on `model.joblib`**  
-> The trained model file is large and therefore excluded from Git.  
-> To reproduce it, simply run the notebook end-to-end, which will save a fresh copy to `app/model.joblib`.  
-> Alternatively, you may use the already compressed version of `app/model.joblib` provided in this repo, which is smaller in size but still works for inference.
-
 ## 1) Task 1 — Data Prep & Modeling
 
 Steps covered in the notebook:
@@ -59,43 +54,21 @@ python app/app.py
 # open http://127.0.0.1:8050
 --
 
-**Note on model.joblib**
-The trained model is not included in this repo due to GitHub’s 100MB limit.
-To reproduce: run the notebook st126055_CarPrice.ipynb, which will save the trained model into app/model.joblib.
-Or you can try app/model.joblib that 
-
 **Setup & Usage**
-
-1. Install dependencies
-
-pip install -r requirements.txt
-
-2. Run Notebook (Training + Export Model)
-
-jupyter notebook notebooks/st126055_CarPrice.ipynb
-
-This will train the model and save it as:
-
-app/model.joblib
-
-3. Run Dash app (locally)
+- Run Dash app (locally)
 
 cd app
 python app.py
 
 Then open: 👉 http://localhost:8050
 
-4. Run with Docker
+- Run with Docker
 
 docker compose up --build
 
 
 **Notes & Issues**
 	The Random Forest model was chosen as the final model because it achieved the best performance (MAE ≈ 28K, RMSE ≈ 126K, R² ≈ 0.98).
-	One challenge was that the trained model file exceeded GitHub’s 100MB limit.
-	✅ Solution: we compressed the model into a smaller version, which still works properly for inference in the Dash app.
-	If you want maximum precision, you can stop at the original (uncompressed) model step in the notebook and run Dash directly with that version.
-
 ⸻
 
 **👤 Author**
