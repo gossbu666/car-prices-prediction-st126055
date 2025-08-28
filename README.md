@@ -1,6 +1,6 @@
 **Car Price Prediction (Machine Learning Assignment)**
 
-*Project Overview*
+**Project Overview**
 
 This project develops a car price prediction system.
 The solution includes:
@@ -43,10 +43,10 @@ docker compose up --build
 
 
 **Notes & Issues**
-	•	The Random Forest model was chosen as the final model because it achieved the best performance (MAE ≈ 28K, RMSE ≈ 126K, R² ≈ 0.98).
-	•	One challenge was that the trained model file exceeded GitHub’s 100MB limit.
-	•	✅ Solution: we compressed the model into a smaller version, which still works properly for inference in the Dash app.
-	•	If you want maximum precision, you can stop at the original (uncompressed) model step in the notebook and run Dash directly with that version.
+	The Random Forest model was chosen as the final model because it achieved the best performance (MAE ≈ 28K, RMSE ≈ 126K, R² ≈ 0.98).
+	One challenge was that the trained model file exceeded GitHub’s 100MB limit.
+	✅ Solution: we compressed the model into a smaller version, which still works properly for inference in the Dash app.
+	If you want maximum precision, you can stop at the original (uncompressed) model step in the notebook and run Dash directly with that version.
 
 ⸻
 
