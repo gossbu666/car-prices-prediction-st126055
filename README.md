@@ -1,6 +1,6 @@
-🚗 Car Price Prediction (Machine Learning Assignment)
+**Car Price Prediction (Machine Learning Assignment)**
 
-📌 Project Overview
+*Project Overview*
 
 This project develops a car price prediction system.
 The solution includes:
@@ -12,25 +12,11 @@ Dataset used: Cars dataset
 
 ⸻
 
-📂 Repository Structure
-
-.
-├── app/                     # Web application folder
-│   ├── app.py               # Dash app code
-│   ├── Dockerfile           # Dockerfile for app
-│   ├── docker-compose.yml   # Compose file
-│   └── model.joblib         # Trained model (⚠️ excluded, >100MB)
-├── data/Cars.csv            # Raw dataset
-├── notebooks/st126055_CarPrice.ipynb  # Jupyter notebook (EDA, training, evaluation)
-├── A1__Predicting_Car_Price.pdf       # Assignment instructions
-├── README.md                # This file
-└── requirements.txt         # Python dependencies
-
-⚠️ Note on model.joblib
+**Note on model.joblib**
 The trained model is not included in this repo due to GitHub’s 100MB limit.
 ➡️ To reproduce: run the notebook st126055_CarPrice.ipynb, which will save the trained model into app/model.joblib.
 
-🛠️ Setup & Usage
+**Setup & Usage**
 
 1. Install dependencies
 
@@ -55,7 +41,8 @@ Then open: 👉 http://localhost:8050
 
 docker compose up --build
 
-📝 Notes & Issues
+
+**Notes & Issues**
 	•	The Random Forest model was chosen as the final model because it achieved the best performance (MAE ≈ 28K, RMSE ≈ 126K, R² ≈ 0.98).
 	•	One challenge was that the trained model file exceeded GitHub’s 100MB limit.
 	•	✅ Solution: we compressed the model into a smaller version, which still works properly for inference in the Dash app.
@@ -63,7 +50,7 @@ docker compose up --build
 
 ⸻
 
-👤 Author
+**👤 Author**
 	•	Supanut Kompayak (st126055)
 	•	Course: AT82.03 Machine Learning
 	•	Asian Institute of Technology (AIT)
