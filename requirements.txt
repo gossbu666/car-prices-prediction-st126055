@@ -7,3 +7,4 @@ plotly
 jupyterlab
 dash
 joblib
+jinja2
