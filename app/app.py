@@ -10,7 +10,7 @@ from dash import Dash, dcc, html, Input, Output, State
 
 # ---------- paths ----------
 APP_DIR    = Path(__file__).parent
-MODEL_PATH = APP_DIR / "model.joblib"
+MODEL_PATH = APP_DIR / "RandomForestRegressor.z"
 META_PATH  = APP_DIR / "model_meta.json"  # optional
 
 # ---------- load model ----------
